@@ -16,12 +16,12 @@ public class SearchBarController {
 
     @FXML
     void clearSearchBar(ActionEvent event) {
-        System.out.println("Clearing search bar");
+
     }
 
     @FXML
     void search(ActionEvent event) {
-        System.out.println("Searching for " + search_tf.getText());
+
     }
 
     @FXML

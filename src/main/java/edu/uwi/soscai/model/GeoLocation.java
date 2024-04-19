@@ -4,8 +4,6 @@ import java.io.IOException;
 
 import org.json.JSONObject;
 
-import edu.uwi.soscai.api.GeoLocator;
-
 public class GeoLocation {
     private String name = "N/A";
     private double lat = 0.0;
@@ -54,15 +52,13 @@ public class GeoLocation {
     }
 
     public static final GeoLocation getLocationViaName(String name) throws IOException {
-        JSONObject response = GeoLocator.getFirstResult(name);
-        if (response != null) {
-            return new GeoLocation(
-                    response.getString("name"),
-                    response.getDouble("lat"),
-                    response.getDouble("lon"),
-                    response.getString("country"),
-                    response.getString("state"));
-        }
         return null;
     }
+
+    @Override
+    public String toString() {
+        return "GeoLocation [name=" + name + ", lat=" + lat + ", lon=" + lon + ", country=" + country + ", state="
+                + state + "]";
+    }
+
 }

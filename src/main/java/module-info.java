@@ -3,7 +3,7 @@ module edu.uwi.soscai {
     requires transitive javafx.fxml;
     requires transitive javafx.graphics;
     requires javafx.base;
-    
+    requires org.controlsfx.controls;
     requires commons.io;
 
     requires transitive org.json;
