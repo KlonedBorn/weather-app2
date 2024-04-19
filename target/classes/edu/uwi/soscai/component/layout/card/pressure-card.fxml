@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="200.0" prefWidth="100.0" style="-fx-effect: dropshadow(three-pass-box, #aaaaaa, 10, 0, 4, 4); -fx-background-color: white; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: grey; -fx-padding: 10px;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-text-fill: grey; -fx-font-size: 18px; -fx-font-weight: bold;" text="Pressure" />
+      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="1013.25 hPa" VBox.vgrow="SOMETIMES">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="209.45 hPa" VBox.vgrow="SOMETIMES">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="841.04 hPa" VBox.vgrow="SOMETIMES">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>

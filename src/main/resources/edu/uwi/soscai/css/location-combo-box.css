@@ -1,0 +1,50 @@
+/* Style for the ComboBox */
+.combo-box {
+  -fx-background-color: white; /* Set background color */
+  -fx-border-color: lightgrey; /* Set border color */
+  -fx-border-width: 1px; /* Set border width */
+  -fx-border-radius: 5px; /* Set border radius */
+  -fx-padding: 5px; /* Set internal padding */
+  -fx-font-size: 14px; /* Set font size */
+}
+
+/* Style for the ComboBox prompt text */
+.combo-box .prompt-text {
+  -fx-fill: grey; /* Set prompt text color */
+}
+
+/* Style for the ComboBox arrow button */
+.combo-box .arrow-button {
+  -fx-background-color: transparent; /* Set arrow button background color */
+}
+
+/* Style for the ComboBox arrow icon */
+.combo-box .arrow-button .arrow {
+  -fx-background-color: grey; /* Set arrow icon color */
+}
+
+/* Style for the ComboBox popup */
+.combo-box .list-view {
+  -fx-background-color: white; /* Set popup background color */
+  -fx-border-color: lightgrey; /* Set popup border color */
+  -fx-border-width: 1px; /* Set popup border width */
+  -fx-effect: dropshadow(
+    three-pass-box,
+    #aaaaaa,
+    5,
+    0,
+    0,
+    0
+  ); /* Add drop shadow effect */
+}
+
+/* Style for the ComboBox list cell */
+.combo-box .list-cell {
+  -fx-padding: 5px; /* Set list cell padding */
+  -fx-font-size: 14px; /* Set list cell font size */
+}
+
+/* Style for the ComboBox list cell when selected */
+.combo-box .list-cell:selected {
+  -fx-text-fill: white; /* Set selected item text color */
+}

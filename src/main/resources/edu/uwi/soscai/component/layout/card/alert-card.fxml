@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root prefHeight="200.0" prefWidth="350.0" type="VBox" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Label fx:id="source_lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="30.0" minWidth="150.0" text="&lt;Alert-Source&gt;">
+               <styleClass>
+                  <String fx:value="title" />
+                  <String fx:value="raised-hover" />
+               </styleClass>
+            </Label>
+            <VBox HBox.hgrow="ALWAYS" />
+            <ImageView>
+               <image>
+                  <Image url="@../../img/caution.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Label fx:id="event_lbl" minHeight="30.0" text="&lt;Alert-Event&gt;">
+         <styleClass>
+            <String fx:value="sub" />
+            <String fx:value="raised-hover" />
+         </styleClass></Label>
+      <HBox minHeight="30.0" spacing="5.0">
+         <children>
+            <Label fx:id="startDate_lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="80.0" text="&lt;Alert-Start-Date&gt;">
+               <styleClass>
+                  <String fx:value="sm" />
+                  <String fx:value="raised-hover" />
+               </styleClass></Label>
+            <Label fx:id="endDate_lbl" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="80.0" text="&lt;Alert-End-Date&gt;">
+               <styleClass>
+                  <String fx:value="sm" />
+                  <String fx:value="raised-hover" />
+               </styleClass></Label>
+         </children>
+      </HBox>
+      <Label fx:id="description_lbl" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="&lt;Alert-Description&gt;" wrapText="true" VBox.vgrow="SOMETIMES">
+         <styleClass>
+            <String fx:value="normal-txt" />
+            <String fx:value="raised-hover" />
+         </styleClass></Label>
+      <FlowPane fx:id="tabBox_fp" hgap="5.0" styleClass="tag-box" vgap="5.0">
+         <children>
+            <Label alignment="CENTER" minHeight="25.0" minWidth="60.0" text="Tag">
+               <styleClass>
+                  <String fx:value="tag" />
+                  <String fx:value="tag-blue" />
+                  <String fx:value="raised-hover" />
+               </styleClass>
+            </Label>
+            <Label alignment="CENTER" minHeight="25.0" minWidth="60.0" style="-fx-padding: 5px; -fx-background-color: red; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 8px;" text="Tag">
+               <styleClass>
+                  <String fx:value="raised-hover" />
+                  <String fx:value="tag-red" />
+                  <String fx:value="tag" />
+               </styleClass>
+            </Label>
+            <Label alignment="CENTER" minHeight="25.0" minWidth="60.0" style="-fx-padding: 5px; -fx-background-color: orange; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 8px;" text="Tag">
+               <styleClass>
+                  <String fx:value="raised-hover" />
+                  <String fx:value="tag" />
+                  <String fx:value="tag-orange" />
+               </styleClass>
+            </Label>
+            <Label alignment="CENTER" minHeight="25.0" minWidth="60.0" style="-fx-padding: 5px; -fx-background-color: forestgreen; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 8px;" text="Tag">
+               <styleClass>
+                  <String fx:value="raised-hover" />
+                  <String fx:value="tag" />
+                  <String fx:value="tag-green" />
+               </styleClass>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </FlowPane>
+   </children>
+   <stylesheets>
+      <URL value="@../../css/alert-card.css" />
+      <URL value="@../../css/card.css" />
+   </stylesheets>
+   <styleClass>
+      <String fx:value="alert-card" />
+      <String fx:value="card" />
+   </styleClass>
+</fx:root>

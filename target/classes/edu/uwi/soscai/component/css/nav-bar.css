@@ -1,0 +1,62 @@
+/* Style for the root HBox (navigation bar) */
+.nav-bar {
+  -fx-spacing: 5; /* Set spacing between children */
+  -fx-padding: 2; /* Set padding around the HBox */
+  -fx-border-width: 1px; /* Set border width */
+}
+
+/* Style for the ToggleButton (tab button) */
+.tab-button {
+  -fx-pref-width: 120; /* Set preferred width */
+  -fx-font-size: 14px; /* Set font size */
+  -fx-background-color: #f0f0f0; /* Set background color */
+  -fx-border-color: lightgrey; /* Set border color */
+  -fx-border-width: 1px; /* Set border width */
+}
+
+/* Style for the selected ToggleButton (tab button) */
+.tab-button:selected {
+  -fx-background-color: #007bff; /* Set background color when selected */
+  -fx-text-fill: white; /* Set text color when selected */
+}
+
+/* Style for the ToggleButton (unit button) */
+.unit-button {
+  -fx-pref-width: 40; /* Set preferred width */
+  -fx-pref-height: 40; /* Set preferred height */
+  -fx-font-size: 14px; /* Set font size */
+  -fx-background-color: #f0f0f0; /* Set background color */
+  -fx-border-color: lightgrey; /* Set border color */
+  -fx-border-width: 1px; /* Set border width */
+}
+
+/* Style for the selected ToggleButton (unit button) */
+.unit-button:selected {
+  -fx-background-color: #007bff; /* Set background color when selected */
+  -fx-text-fill: white; /* Set text color when selected */
+}
+
+/* Style for the Separator */
+.separator {
+  -fx-pref-width: 200; /* Set preferred width */
+  -fx-visible: false; /* Hide the separator */
+}
+
+/* Style for the settings button */
+#settings-button {
+  -fx-pref-height: 40; /* Set preferred height */
+  -fx-pref-width: 40; /* Set preferred width */
+  -fx-background-color: transparent; /* Set background color */
+  -fx-border-color: transparent; /* Set border color */
+  -fx-border-width: 0; /* Set border width */
+  -fx-cursor: hand; /* Change cursor to hand when hovering */
+}
+
+/* Style for the settings button icon */
+#settings-button .graphic .image-view {
+  -fx-fit-height: 24; /* Set icon height */
+  -fx-fit-width: 24; /* Set icon width */
+  -fx-opacity: 0.7; /* Set icon opacity */
+}
+
+/* Additional styles or overrides can be added as needed */

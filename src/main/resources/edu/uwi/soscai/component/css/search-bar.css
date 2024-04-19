@@ -1,0 +1,69 @@
+.search-bar {
+  -fx-background-color: #f0f0f0;
+  -fx-border-color: #a0a0a0;
+  -fx-border-width: 1px;
+  -fx-padding: 5px;
+  -fx-border-radius: 10px;
+  -fx-background-radius: 10px;
+  -fx-alignment: center-right;
+}
+
+.search-bar .icon {
+  -fx-background-color: transparent;
+  -fx-border-color: transparent;
+}
+
+.search-bar .text-field {
+  -fx-background-color: transparent;
+  -fx-border-color: transparent;
+  -fx-font-size: 14px;
+}
+
+.search-bar .clear-button {
+  -fx-background-color: transparent;
+}
+
+.search-bar .clear-button:hover {
+  -fx-scale-x: 1.1;
+  -fx-scale-y: 1.1;
+}
+
+.search-bar .clear-button:armed {
+  -fx-scale-x: 0.9;
+  -fx-scale-y: 0.9;
+}
+
+.search-bar .search_alert {
+  -fx-text-fill: black;
+}
+
+.search-bar .search_alert.error {
+  -fx-text-fill: red;
+}
+
+.search-bar .search_alert.message {
+  -fx-text-fill: green;
+}
+
+.search-bar .search_alert > .tooltip-inner {
+  -fx-text-alignment: center;
+  -fx-max-width: 200px;
+  -fx-padding: 10px;
+  -fx-background-radius: 10px;
+  -fx-background-color: #f0f0f0;
+  -fx-background-insets: 5px;
+  -fx-text-fill: black;
+  -fx-font-size: 14px;
+  -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.75), 10, 0, 0, 1);
+  -fx-position: top center;
+}
+#loupe {
+  -fx-image: url("../img/loupe.png");
+  -fx-fit-width: 24px;
+  -fx-fit-height: 24px;
+}
+#clear {
+  -fx-image: url("../img/closed.png");
+  -fx-fit-width: 24px;
+  -fx-fit-height: 24px;
+}

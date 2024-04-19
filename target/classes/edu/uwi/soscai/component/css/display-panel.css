@@ -1,0 +1,83 @@
+/* Style for the root VBox */
+.display-panel {
+  -fx-background-color: white;
+  -fx-padding: 10px;
+}
+
+/* Style for the location VBox */
+.location-box {
+  /* Add specific styles for location box */
+}
+
+/* Style for the location text */
+.location-txt {
+  -fx-font-size: 28px;
+  -fx-font-weight: bold;
+}
+
+/* Style for the condition icon ImageView */
+.condition-icon {
+  /* Add specific styles for the condition icon */
+}
+
+/* Style for the temperature Label */
+.temperature {
+  -fx-font-size: 64px;
+}
+
+/* Style for the date-time Label */
+.date-time {
+  -fx-font-size: 24px;
+}
+
+/* Style for the weather properties VBox */
+.weather-properties {
+  -fx-font-weight: bold;
+}
+
+/* Style for each weather property Label */
+.weather-property {
+  -fx-font-size: 18px;
+}
+
+/* Apply styles to the root VBox */
+.display-card {
+  -fx-background-color: #f0f0f0;
+  -fx-border-color: #ccc;
+  -fx-border-width: 1px;
+}
+
+/* Custom styles for specific components */
+.location-txt {
+  -fx-text-fill: #333;
+}
+
+.save-button {
+  -fx-background-color: #007bff;
+  -fx-font-size: 14px;
+  -fx-font-weight: bold;
+  -fx-text-fill: white;
+}
+.save-button:hover {
+  -fx-background-color: #0069d9;
+  -fx-text-fill: white;
+}
+.save-button:armed {
+  -fx-background-color: #0062cc;
+  -fx-text-fill: white;
+}
+.condition-icon {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 0);
+}
+
+.temperature {
+  -fx-text-fill: #ff5733;
+}
+
+.date-time {
+  -fx-text-fill: #666;
+}
+
+.weather-property {
+  -fx-text-fill: #333;
+}

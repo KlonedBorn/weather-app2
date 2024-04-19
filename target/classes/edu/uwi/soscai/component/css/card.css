@@ -1,0 +1,5 @@
+.card {
+    -fx-background-color: #f0f0f0; /* Replace with your desired background color */
+    -fx-background-radius: 10; /* Adjust the value to change the roundness of the edges */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0); /* Adjust the values to customize the shadow */
+}

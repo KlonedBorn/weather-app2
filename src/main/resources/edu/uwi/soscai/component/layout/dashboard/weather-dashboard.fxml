@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root spacing="20.0" type="VBox" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane fitToHeight="true" hbarPolicy="NEVER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" pannable="true" vbarPolicy="NEVER">
+         <content>
+            <HBox fx:id="weatherArr" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" style="-fx-background-color: white; -fx-border-color: grey; -fx-border-radius: 9px;">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </content>
+      </ScrollPane>
+      <VBox prefHeight="342.0" prefWidth="895.0" spacing="5.0" VBox.vgrow="SOMETIMES">
+         <children>
+            <HBox spacing="5.0" VBox.vgrow="SOMETIMES">
+               <children>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" style="-fx-effect: dropshadow(three-pass-box, #aaaaaa, 10, 0, 4, 4); -fx-background-color: white; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: grey; -fx-padding: 10px;" HBox.hgrow="SOMETIMES">
+                     <children>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-text-fill: grey; -fx-font-size: 18px; -fx-font-weight: bold;" text="Humidity" />
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-font-size: 56px;" text="28%" VBox.vgrow="ALWAYS" />
+                        <ProgressBar maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="200.0" progress="0.28" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" style="-fx-effect: dropshadow(three-pass-box, #aaaaaa, 10, 0, 4, 4); -fx-background-color: white; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: grey; -fx-padding: 10px;" HBox.hgrow="SOMETIMES">
+                     <children>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-text-fill: grey; -fx-font-size: 14px; -fx-font-weight: bold;" text="Cloud Coverage" />
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-font-size: 56px;" text="45%" VBox.vgrow="ALWAYS" />
+                        <ProgressBar maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="35.0" prefWidth="200.0" progress="0.45" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-effect: dropshadow(three-pass-box, #aaaaaa, 10, 0, 4, 4); -fx-background-color: white; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: grey; -fx-padding: 10px;" HBox.hgrow="SOMETIMES">
+                     <children>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-text-fill: grey; -fx-font-size: 18px; -fx-font-weight: bold;" text="Temperature" />
+                        <HBox spacing="10.0">
+                           <children>
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" style="-fx-font-size: 36px; -fx-font-weight: bold;" text="34°C" HBox.hgrow="NEVER">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="50.0" style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: grey;" text="28°C">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="26°C">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="36°C">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox spacing="5.0" VBox.vgrow="SOMETIMES">
+               <children>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" style="-fx-effect: dropshadow(three-pass-box, #aaaaaa, 10, 0, 4, 4); -fx-background-color: white; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: grey; -fx-padding: 10px;" HBox.hgrow="SOMETIMES">
+                     <children>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-text-fill: grey; -fx-font-size: 18px; -fx-font-weight: bold;" text="Precipitation/Rain" />
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-font-size: 56px;" text="56%" />
+                        <ProgressBar maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" progress="0.56" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-effect: dropshadow(three-pass-box, #aaaaaa, 10, 0, 4, 4); -fx-background-color: white; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: grey; -fx-padding: 10px;" HBox.hgrow="SOMETIMES">
+                     <children>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-text-fill: grey; -fx-font-size: 18px; -fx-font-weight: bold;" text="Pressure" />
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="1013.25 hPa">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Label>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="209.45 hPa">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Label>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="841.04 hPa">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" style="-fx-effect: dropshadow(three-pass-box, #aaaaaa, 10, 0, 4, 4); -fx-background-color: white; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: grey; -fx-padding: 10px;" HBox.hgrow="SOMETIMES">
+                     <children>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-text-fill: grey; -fx-font-size: 18px; -fx-font-weight: bold;" text="Wind Status" />
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-font-size: 32px; -fx-font-weight: bold;" text="7.70 Km/h" />
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-font-size: 26px; -fx-text-fill: grey;" text="3.0 Km/h" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</fx:root>

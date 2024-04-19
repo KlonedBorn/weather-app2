@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefWidth="300.0" spacing="5.0" style="-fx-background-color: white;" stylesheets="@../css/display-panel.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox>
+         <children>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="location-txt" text="St'John, Antigua" />
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: grey;" text="17.1274° N, 61.8468° W" />
+         </children>
+      </VBox>
+      <ImageView fitHeight="256.0" fitWidth="256.0" styleClass="condition-icon">
+         <image>
+            <Image url="@../../img/condition/cloudy.png" />
+         </image>
+         <viewport>
+            <Rectangle2D height="256.0" width="256.0" />
+         </viewport>
+      </ImageView>
+      <Label contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-font-size: 64px;" styleClass="temperature" text="34°C">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-font-size: 24px;" styleClass="date-time" text="Thursday, 7:29 PM" />
+      <VBox style="-fx-font-weight: bold;" styleClass="weather-properties">
+         <children>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" styleClass="weather-property" text="Partially Cloudy">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cloud.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" styleClass="weather-property" text="35%">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/water-drop.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" styleClass="weather-property" text="5 Km/h">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/wind.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </VBox>
+      <VBox VBox.vgrow="SOMETIMES" />
+      <ToggleButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="40.0" styleClass="save-button" text="Save Location">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </ToggleButton>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

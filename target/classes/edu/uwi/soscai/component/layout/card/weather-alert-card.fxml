@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="312.0" spacing="5.0" styleClass="card" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox>
+         <children>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Source" wrapText="true" HBox.hgrow="SOMETIMES" />
+            <ImageView fitHeight="32.0" fitWidth="32.0" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/caution.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox maxHeight="1.7976931348623157E308">
+         <children>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="310.0" text="Event" />
+            <HBox prefHeight="30.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="80.0" text="Start" />
+                  <Label prefHeight="30.0" prefWidth="80.0" text="End" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox spacing="5.0">
+         <children>
+            <Label alignment="CENTER" maxWidth="160.0" minWidth="60.0" prefHeight="20.0" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-weight: bold; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-padding: 6px;" text="Hurricane">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Label alignment="CENTER" maxWidth="160.0" minWidth="60.0" prefHeight="20.0" style="-fx-background-color: dodgerblue; -fx-text-fill: white; -fx-font-weight: bold; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-padding: 6px;" text="Flood">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+         </children>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+   <stylesheets>
+      <URL value="@../../css/card.css" />
+      <URL value="@../../css/alert-card.css" />
+   </stylesheets>
+</VBox>

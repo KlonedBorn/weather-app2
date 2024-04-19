@@ -1,0 +1,67 @@
+/* Style for the alert card */
+.alert-card {
+  -fx-padding: 10px;
+  -fx-background-color: #f5f5f5; /* Light gray background */
+  -fx-background-radius: 8px;
+}
+
+.title {
+  -fx-font-size: 18px;
+}
+
+.raised-hover:hover {
+  -fx-scale-x: 1.1;
+  -fx-scale-y: 1.1;
+}
+
+/* Style for the sub label */
+.label.sub {
+  -fx-font-size: 14px;
+  -fx-font-weight: bold;
+  -fx-text-fill: #333333; /* Dark gray text color */
+}
+
+/* Style for the small labels within HBox */
+.label.sm {
+  -fx-font-size: 12px;
+  -fx-text-fill: #666666; /* Medium gray text color */
+}
+
+/* Style for the description label */
+.label.normal-txt {
+  -fx-font-size: 14px;
+  -fx-text-fill: #444444; /* Dark gray text color */
+}
+
+/* Style for the tag box */
+.flow-pane.tag-box {
+  -fx-padding: 5px;
+}
+
+/* Base style for tags */
+.label.tag {
+  -fx-padding: 5px;
+  -fx-font-weight: bold;
+  -fx-background-radius: 8px;
+}
+
+/* Custom styles for different tag backgrounds */
+.label.tag-blue {
+  -fx-background-color: dodgerblue; /* Blue background */
+  -fx-text-fill: white; /* White text color */
+}
+
+.label.tag-red {
+  -fx-background-color: red; /* Red background */
+  -fx-text-fill: white; /* White text color */
+}
+
+.label.tag-orange {
+  -fx-background-color: orange; /* Orange background */
+  -fx-text-fill: white; /* White text color */
+}
+
+.label.tag-green {
+  -fx-background-color: forestgreen; /* Green background */
+  -fx-text-fill: white; /* White text color */
+}

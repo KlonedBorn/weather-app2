@@ -1,0 +1,44 @@
+/* Style for the root VBox within the ToggleButton graphic */
+.info-card {
+  -fx-background-color: white;
+  -fx-background-radius: 10px;
+  -fx-border-color: lightgrey;
+  -fx-border-width: 1px;
+  -fx-effect: dropshadow(three-pass-box, #aaaaaa, 10, 0, 4, 4);
+}
+
+/* Style for the ToggleButton itself */
+.card-button {
+  -fx-background-color: white;
+}
+
+/* Style for the Label displaying the date/time */
+.date-time {
+  -fx-font-weight: bold;
+  -fx-font-size: 18px;
+}
+
+/* Style for the ImageView displaying the temperature icon */
+.condition-icon {
+  -fx-fit-height: 48; /* Customize the height of the image */
+  -fx-fit-width: 48; /* Customize the width of the image */
+  -fx-preserve-ratio: true; /* Preserve the aspect ratio of the image */
+}
+
+/* Custom styles for specific labels within the HBox */
+.temperature {
+  -fx-font-size: 12px;
+  -fx-font-weight: bold;
+}
+
+.temperature--lighter {
+  -fx-text-fill: grey; /* Adjust text color for lighter temperature */
+}
+
+.card-button:hover {
+  -fx-background-color: lightgrey;
+}
+
+.card-button:selected {
+  -fx-background-color: lightblue;
+}
