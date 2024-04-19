@@ -1,12 +1,18 @@
 module edu.uwi.soscai {
     requires transitive javafx.controls;
+
     requires transitive javafx.fxml;
+
     requires transitive javafx.graphics;
+
     requires javafx.base;
+
     requires org.controlsfx.controls;
+
     requires commons.io;
 
     requires transitive org.json;
+
     requires java.net.http;
 
     opens edu.uwi.soscai to javafx.fxml;
