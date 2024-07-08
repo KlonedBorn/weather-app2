@@ -18,5 +18,5 @@ public class App extends Application {
     }
 
     public static final String GEOCODING_ENDPOINT = "http://api.openweathermap.org/geo/1.0/direct";
-    public static final String API_KEY = "0ce3ce5b8c377a72d2347cd2a6bc9e22";
+    public static final String API_KEY = "INSERT-YOU-API-KEY";
 }
